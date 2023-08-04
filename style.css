@@ -7,8 +7,16 @@
   font-family: "Inter", sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+}
 a {
   text-decoration: none;
+  cursor: not-allowed;
+}
+
+.white {
+color: white;
 }
 
 li {
@@ -440,4 +448,194 @@ FEATURES
   filter: invert(14%) sepia(68%) saturate(7492%) hue-rotate(262deg)
     brightness(95%) contrast(112%);
   opacity: 0.15;
+}
+
+/* VALUES */
+.value {
+  width: 50%;
+}
+
+.value__wrapper {
+  display: flex;
+  margin-top: 36px;
+}
+
+.value__logo--wrapper {
+  margin-right: 16px;
+  padding: 8px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.dollar {
+  background-color: #9ae6b4;
+}
+
+.suitcase {
+  background-color: #feb2b2;
+}
+
+
+.value__header {
+  width: 100%;
+  display: flex;
+  color: #243e63;
+  font-size: 20px;
+  font-weight: 700;
+  
+}
+
+.value__description {
+  margin-top: 16px;
+  line-height: 1.5;
+  padding-right: 16px;
+  color: rgb(113 128 150);
+}
+
+.values__description {
+  width: 50%;
+  padding: 0 8px 0 0;
+}
+
+.values__wrapper {
+  display: flex;
+  margin: 96px 0;
+  padding: 0 16px;
+}
+
+.values__img--wrapper {
+  width: 50%;
+  padding-left: 16px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
+
+.values__img {
+  width: 100%;
+  border-radius: 4px;
+  position: relative;
+  z-index: 2;
+}
+
+.values__btn {
+  margin-top: 48px;
+}
+
+/* 
+
+PRICING
+
+*/
+
+.cards__wrapper {
+  display: flex;
+  margin-top: 36px;
+}
+
+.card {
+  width: calc(100% / 3);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(226, 232, 240);
+  margin-left: 48px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.card--business {
+  background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.card__sliver{
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+
+.card__description--wrapper {
+  width: 100%;
+  border-bottom:2px solid rgb(226, 232, 240);
+  line-height: 3;
+  padding: 16px 0;
+
+}
+
+.card__header--wrapper {
+  width: 100%;
+  border-bottom:2px solid rgb(226, 232, 240);
+  padding: 32px 0;
+}
+
+.card__footer--wrapper {
+  margin: 24px 0;
+}
+
+.btn--buy {
+  padding: 16px 56px;
+  cursor: not-allowed;
+  border-radius: 50px;
+  transition: all 300ms ease;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+}
+
+.btn--buy:hover {
+  transform: translateY(2px);
+}
+
+.personal {
+  background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+  color: white;
+
+}
+
+.enterprise {
+  background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+  color: white;
+}
+
+.business {
+  background: white;
+  color: #6415ff;
+}
+
+.card__title {
+  font-size: 20px;
+  color: #1a202c;
+  font-weight: 700;
+}
+
+.card__price {
+  font-size: 40px;
+  padding: 16px 0;
+  color:#1a202c;
+  font-weight: 700;
+}
+
+.card__length {
+  font-size: 16px;
+  font-weight: 500;
+  color: #a0aec0;
+}
+
+.card__description--title {
+  font-size: 20px;
+  color: #1a202c;
+  font-weight: 700;
+}
+
+.card__detail {
+  font-size: 16px;
+  color: #718096;
+  font-weight: 500;
 }
