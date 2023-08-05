@@ -338,6 +338,8 @@ FEATURES
   padding-left: 16px;
   position: relative;
   z-index: 2;
+  display: flex;
+  align-items: center;
 }
 
 .quality-work__img {
@@ -564,7 +566,7 @@ PRICING
 .card__description--wrapper {
   width: 100%;
   border-bottom:2px solid rgb(226, 232, 240);
-  line-height: 3;
+  line-height: 2.5;
   padding: 16px 0;
 
 }
@@ -639,3 +641,241 @@ PRICING
   color: #718096;
   font-weight: 500;
 }
+
+/* TESTIMONIALS */
+.testimonials__description {
+  width: 50%;
+  padding: 0 8px 0 0;
+  margin-left: 48px;
+}
+
+.testimonials-wrapper {
+  display: flex;
+  margin: 96px 0;
+  padding: 0 16px;
+}
+
+.testimonials__img--wrapper {
+  width: 50%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.testimonials__img {
+  width: 100%;
+  z-index: 2;
+}
+
+.review {
+  margin-top: 32px;
+}
+.review__rating {
+  color: #fabf2a;
+}
+
+.review__header {
+  margin: 16px 0;
+  font-weight: 700;
+  color: #243e63;
+  font-size: 20px;
+}
+.review__description {
+  color: #4a5568;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.review__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user__scroller {
+  display: flex;
+}
+
+
+.user {
+  display: flex;
+  margin-top: 32px;
+}
+
+.user__name {
+  color: #243e63;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.user__information {
+  margin-left: 16px;
+}
+
+.user__photo {
+  width: 80px;
+  height: 80px;
+  display: flex;
+}
+
+.user__photo-img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.user__information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user__scroller-arrow--right, .user__scroller-arrow--left {
+ padding: 13px 16px;
+ margin: 0 12px;
+ color: #6415ff;
+ border-radius: 100%;
+ background-color: #edf2f7;
+ transition: all 300ms ease;
+  cursor: not-allowed;
+}
+
+.user__scroller-arrow--right:hover, .user__scroller-arrow--left:hover {
+  background-color: #d0d0d073;
+}
+
+.divider {
+  width: 1px;
+  border: 1px solid #edf2f7 ;
+  
+}
+
+/* CONTACT CARD */
+.contact-card {
+  padding: 96px 56px;
+  background-color: rgb(100 21 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 96px;
+}
+
+.contact-card__get-started-btn {
+padding: 24px 40px;
+background-color: #f56565;
+border: none;
+border-radius: 999px;
+font-size: 16px;
+color: white;
+font-weight: 700;
+transition: all 300ms ease;
+margin-right: 16px;
+cursor: not-allowed;
+}
+
+.contact-card__get-started-btn:hover {
+  background-color: #e53e3e;
+}
+
+.contact-card__contact-us-btn {
+padding: 24px 40px;
+background-color: rgb(100 21 255);
+border: none;
+border-radius: 999px;
+border:1px solid white;
+font-size: 16px;
+color: white;
+font-weight: 700;
+transition: all 300ms ease;
+cursor: not-allowed;
+
+}
+
+.contact-card__contact-us-btn:hover {
+  background-color: white;
+  color: rgb(100 21 255);
+}
+
+.contact-card__message {
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+}
+
+.contact-card__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FOOTER */
+#footer {
+  background-color: rgb(100 21 255);
+}
+
+.footer__list-title {
+  font-weight: 700;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.footer__lists {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(160, 174, 192);
+}
+
+.footer__list-item {
+  color: white;
+  line-height: 2.5;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.footer__copyright {
+  color: #cbd5e0
+}
+
+.footer__links {
+  display: flex;
+}
+
+.footer__link {
+margin-left: 16px;
+padding: 8px;
+background-color: white;
+border-radius: 999px;
+cursor: not-allowed;
+transition: all 300ms ease;
+}
+
+.footer__link:hover {
+  background-color: #d0d0d0f7;
+}
+.footer__logo {
+  width: 35px;
+  margin-right: 12px;
+  background-color:
+}
+
+.footer__logo--wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.footer__emblem--wrapper {
+  font-weight: 900;
+  font-size: 24px;
+  transition: all 300ms ease;
+  color:white;
+}
+
