@@ -9,6 +9,7 @@
 
 html, body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -162,18 +163,23 @@ nav {
 
 .menu__backdrop {
   position: absolute;
-  background-color: #242424;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 12px;
   top: 0;
-  left: 0;
-  bottom: 0;
+  bottom: 100;
   right: 0;
-  z-index: 3;
+  left: 0;
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 300ms ease;
   opacity: 0;
   visibility: hidden;
-  transition: all 300ms ease;
+  transition: all 400ms ease;
 }
 
 .menu--open .menu__backdrop{
@@ -191,7 +197,7 @@ nav {
   right: 20px;
   top:10px;
   padding: 8px;
-  color: white;
+  color: #6415ff;
 }
 /*
 
@@ -301,11 +307,13 @@ header {
   opacity: 0.05;
   transform: translateX(-60%);
 }
+
 /* 
 
 FEATURES
 
 */
+
 #features {
   margin-top: 72px;
   position: relative;
@@ -950,6 +958,17 @@ PRICING
   .btn__menu {
     display: block;
 }
+
+  .nav__links--social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .nav__link {
+    font-size: 18px;
+    line-height: 3;
+  }
 
   .section-subtitle {
     font-size: 36px;
