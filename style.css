@@ -159,6 +159,7 @@ nav {
   text-align: center;
   color: #7342d6;
   display: none;
+  cursor:pointer;
 }
 
 .menu__backdrop {
